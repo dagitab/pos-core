@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <table name="users">
+        <column>id</column>
+        <column>username</column>
+        <column>password</column>
+        <column>firstName</column>
+        <column>lastName</column>
+        <column>address</column>
+        <column>city</column>
+        <column>country</column>
+        <column>email</column>
+        <column>phoneNumber</column>
+        <column>postalCode</column>
+        <column>province</column>
+        <column>website</column>
+        <column>passwordHint</column>
+        <column>version</column>
+        <column>accountEnabled</column>
+        <column>accountExpired</column>
+        <column>accountLocked</column>
+        <column>credentialsExpired</column>
+        <row>
+            <value description="id">-1</value>
+            <value description="username">user</value>
+            <value description="password">12dea96fec20593566ab75692c9949596833adc9</value>
+            <value description="firstName">Tomcat</value>
+            <value description="lastName">User</value>
+            <value description="address"></value>
+            <value description="city">Denver</value>
+            <value description="country">US</value>
+            <value description="email">matt_raible@yahoo.com</value>
+            <value description="phoneNumber"></value>
+            <value description="postalCode">80210</value>
+            <value description="province">CO</value>
+            <value description="website">http://tomcat.apache.org</value>
+            <value description="passwordHint"><![CDATA[A male kitty.]]></value>
+            <value description="version">1</value>
+            <value description="accountEnabled">1</value>
+            <value description="accountExpired">0</value>
+            <value description="accountLocked">0</value>
+            <value description="credentialsExpired">0</value>
+        </row>
+        <row>
+            <value description="id">-2</value>
+            <value description="username">admin</value>
+            <value description="password">d033e22ae348aeb5660fc2140aec35850c4da997</value>
+            <value description="firstName">Matt</value>
+            <value description="lastName">Raible</value>
+            <value description="address"></value>
+            <value description="city">Denver</value>
+            <value description="country">US</value>
+            <value description="email">matt@raibledesigns.com</value>
+            <value description="phoneNumber"></value>
+            <value description="postalCode">80210</value>
+            <value description="province">CO</value>
+            <value description="website">http://raibledesigns.com</value>
+            <value description="passwordHint"><![CDATA[Not a female kitty.]]></value>
+            <value description="version">1</value>
+            <value description="accountEnabled">1</value>
+            <value description="accountExpired">0</value>
+            <value description="accountLocked">0</value>
+            <value description="credentialsExpired">0</value>
+        </row>
+    </table>
+    <table name="roles">
+        <column>id</column>
+        <column>name</column>
+        <column>description</column>
+        <row>
+            <value description="id">-1</value>
+            <value description="name">ROLE_ADMIN</value>
+            <value description="description"><![CDATA[Administrator role (can edit Users)]]></value>
+        </row>
+        <row>
+            <value description="id">-2</value>
+            <value description="name">ROLE_USER</value>
+            <value description="description"><![CDATA[Default role for all Users]]></value>
+        </row>
+    </table>
+    <table name="users_roles">
+        <column>userId</column>
+        <column>roleId</column>
+        <row>
+            <value description="userId">-1</value>
+            <value description="roleId">-2</value>
+        </row>
+        <row>
+            <value description="userId">-2</value>
+            <value description="roleId">-1</value>
+        </row>
+    </table>
+</dataset>

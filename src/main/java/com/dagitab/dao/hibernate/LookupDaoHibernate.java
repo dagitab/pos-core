@@ -1,5 +1,5 @@
 package com.dagitab.dao.hibernate;
-	
+
 import java.util.List;
 
 import com.dagitab.dao.LookupDao;

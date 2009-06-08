@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"
+       default-lazy-init="true">
+
+	<bean class="com.dagitab.dao.spring.HibernateExtensionPostProcessor">
+		<property name="annotatedClasses">
+			<list>
+				<value>com.dagitab.model.CashPayment</value>
+				<value>com.dagitab.model.CheckPayment</value>
+				<value>com.dagitab.model.Company</value>
+				<value>com.dagitab.model.Configuration</value>
+				<value>com.dagitab.model.CreditCardPayment</value>
+				<value>com.dagitab.model.Currency</value>
+				<value>com.dagitab.model.Customer</value>
+				<value>com.dagitab.model.Discount</value>
+				<value>com.dagitab.model.GiftCertificatePayment</value>
+				<value>com.dagitab.model.Invoice</value>
+				<value>com.dagitab.model.InvoiceItem</value>
+				<value>com.dagitab.model.Item</value>
+				<value>com.dagitab.model.ItemCategory</value>
+				<value>com.dagitab.model.Payment</value>
+				<value>com.dagitab.model.UnitOfMeasure</value>
+			</list>
+		</property>
+	</bean>
+    <!-- Add new DAOs here -->
+
+    <!-- Add new Managers here -->
+</beans>
